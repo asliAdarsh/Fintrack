@@ -29,7 +29,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgresql+pg8000://fintrack_user:fintrack_password@db/fintrack_db
+      DATABASE_URL: postgresql://fintrack_user:fintrack_password@db/fintrack_db
       SECRET_KEY: fintrack_secret_production_key_xyz_123
       FLASK_ENV: production
       UPLOAD_FOLDER: /app/uploads
